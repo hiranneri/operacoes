@@ -1,0 +1,16 @@
+server:
+  port: 8083
+  error:
+    include-stacktrace: never
+
+spring:
+  autoconfigure:
+    exclude: org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+  data:
+    mongodb:
+      uri: mongodb://hiran:secret@localhost:27017/operacoes
+  application:
+    name: operacoes
+  kafka:
+    bootstrap-servers: localhost:9093
+
