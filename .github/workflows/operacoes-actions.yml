@@ -30,4 +30,4 @@ jobs:
 
       - name: Build and Push image to DockerHub
         id: docker_build
-        run: mvn clean install -U -DskipTests -Ddocker && docker push hiranneri/financeiro-service
+        run: mvn clean install -U -DskipTests -Ddocker && docker push hiranneri/operacoes-service
